@@ -11,19 +11,16 @@ def input_list():
     return unordered
 
 def bubble_sort(unordered_list):
-    count = 0
-    
-    if unordered_list[count] > unordered_list[count+1]:
-        temp = unordered_list[count] 
-        unordered_list[count] = unordered_list[count+1]
-        unordered_list[count+1] = temp
-        print(unordered_list)
-        
-       
-        
-    
-        
-            
+    finished = False
+    while finished == False:
+        for item in range(len(unordered_list)-1):
+            if unordered_list[item] > unordered_list[item+1]:
+                temp = unordered_list[item] 
+                unordered_list[item] = unordered_list[item+1]
+                unordered_list[item+1] = temp
+                print(unordered_list)
+            finished == True
+                   
 unordered_list = input_list()
 bubble_sort(unordered_list)
     
