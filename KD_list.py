@@ -6,14 +6,8 @@ players = [
 ]
 
 
-for count in range(3):
-    print("{0}".format(players[0][count]))
-
-for count in range(3):
-    print("{0}".format(players[1][count]))
-
-for count in range(3):
-    print("{0}".format(players[2][count]))
+for player in players:
+    print("|{0:<11}|{1:<3}|{2:<3}|".format(player[0],player[1],player[2]))
 
 
 
