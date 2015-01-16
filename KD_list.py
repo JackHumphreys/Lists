@@ -5,10 +5,10 @@ players = [
     ["hAxOr12",72,30]
 ]
 
-
+print("-"*21)
 for player in players:
     print("|{0:<11}|{1:<3}|{2:<3}|".format(player[0],player[1],player[2]))
-
+    print("-"*21)
 
 
 
